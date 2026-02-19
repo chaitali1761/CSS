@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle> 
+        #Navbar{
+            height: 60PX;
+           /* border: 2PX SOLID BLACK;*/
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .inner_text{
+            width: 100px;
+            height: 45px;
+            /*border: 2px solid red;*/
+            display: flex;
+            justify-content: center;
+          
+         }
+
+     .logo{
+           width: 200px;
+        }
+
+ /* Main Section */
+        .main{
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Left Side */
+        .left{
+            width: 50%;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+        /* Right Side */
+        .right{
+            width: 50%;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+
+        .right-box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box{
+            width: 48%;
+            height: 150px;
+            border: 2px solid red;
+        }
+       
+    </STYle>
+</head>
+<body>
+    <!-- Navbar section -->
+    <div id="Navbar">
+    <img  class="logo" src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg" alt="">
+     <div class="inner_text" ></div> 
+        <h3>HOME</h3>
+        <h3>Service</h3>
+        <h3>Contact</h3>
+        <h3>About</h3>
+        <h3>Login</h3>
+    </div>
+
+  
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Left Content -->
+        <div class="left">
+            <h2>Welcome to study lab</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Accusamus, suscipit voluptatum quia facere saepe sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Aliquam voluptatem quia facere saepe.</p>
+        </div>
+
+        <!-- Right Boxes -->
+        <div class="right">
+            <div class="right-box">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
