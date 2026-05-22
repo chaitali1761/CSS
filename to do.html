@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input-sec, #taskview-sec{
+            text-align: center;
+
+        }
+        input ,button{
+        padding: 10px;
+        }
+    </style></head>
+<body>
+    <div id="input-sec">
+        <input type="text" placeholder="Enter some task">
+        <button>Add Task</button>
+    </div>
+    
+    <div id="taskview-sec" >
+    <ul id="task-sec"  type="none">
+        <li>study</li>
+
+    </ul>
+    </div>
+
+    <script>
+        let inputText = document.querySelector("#input-text");
+        let btn =document.querySelector("#add-task");
+        let unorderelist=document.querySelector("task-sec");
+
+
+        btn.addEventListener("click",()=>{
+        let list=document.createElement("li")
+        list.innerText= inputText.value;
+
+        let editBtn = document.createElement("button");
+        editBtn.innerText="edit"
+        editBtn.addEventListener("click",()=> {
+
+        let editInput= document.createElement("input")
+        editInput.type="text"
+        editInput.value=list.innerText.replace("EditDelete");
+        
+        
+        let save =document.createElement("button")
+        saveBtn.innerText="save"
+
+        saveBtn.addEventListener("click",()=>{
+            list.innerText=editInput.value
+            cancelBtn.addEventListener("click",()=>{
+             editInput.remove();
+             saveBtn.remove();
+             cancelBtn.remove();
+            })
+             let delBtn =document.createElement("button")
+            cancelBtn.innerText="cancel"
+        list.append(editInput,saveBtn,delBtn)
+            })
+            
+        let editBtn = document.createElement("button");
+        editBtn.innerText="edit"
+        editBtn.addEventListener("click",()=> {
+
+        let editInput= document.createElement("input")
+        editInput.type="text"
+        editInput.value=list.innerText.replace("EditDelete");
+
+         let delBtn =document.createElement("button")
+            delBtn.innerText="Delete";
+            deleBtn.addEventListener("click",()=>{
+                list.remove();
+            });
+            list.append(delBtn,editBtn);
+        })
+        
+        let saveBtn =document.createElement("button")
+        saveBtn.innerText="save"
+
+       let delBtn =document.createElement("button")
+        cancelBtn.innerText="cancel"
+        list.append(editInput,saveBtn,delBtn)
+            })
+
+            let delBtn =document.createElement("button")
+            delBtn.innerText="Delete";
+            deleBtn.addEventListener("click",()=>{
+                list.remove();
+            });
+            list.append(delBtn,editBtn);
+
+            unorderedlist.append(list);
+            inputText.value="";
+
+        });
+    </script>
+</body>
+</html>
